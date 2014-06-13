@@ -14,8 +14,8 @@ function IcecreamCtrl($scope, $http) {
 //    { id:'snickers',        name:'Snickers Ice Cream',   address:'1EnqYmVHS1h5eBeP3SHSLZYmDr2pAZAuiR', price:0.0016, euro:0.8 },
 //    { id:'magnumalmond',    name:'Magnum Almond',        address:'13JFwsGPLNtQnkgPYcqugKnkFwaiE1dUTt', price:0.002, euro:1.0 },
     { id:'magnumyoghurt',   name:'Magnum Yoghurt Fresh', address:'1JneKd8QbToVo2TNvrgEkQQrAz9MrbGVXm', price:0.002, euro:1.0 },
-   { id:'magnumgold',      name:'Magnum Gold',          address:'1FyYcrf4QGg9RxnQRkg7xTv7DCirVDYYri', price:0.002, euro:1.0 },
-   { id:'magnumclassic',   name:'Magnum Classic',       address:'18KBcPgdsk1Q6MMEBkM7wh5TPJ38fYsxpP', price:0.002, euro:1.0 },
+   { id:'magnumgold',      name:'Magnum Gold',          address:'1PgPdq7XgSdyV8uhY22Cj77LAxSn1HgrUz', price:0.002, euro:1.0 },
+   { id:'magnumclassic',   name:'Magnum Classic',       address:'1PduF4SebKT7QxKoSzUrwN9D4miSZyF9Yj', price:0.002, euro:1.0 },
 //    { id:'magnummini',      name:'Magnum Mini',          address:'17G2pAaupxEDTSxoVZL3CQrCxBbTD6b6WS', price:0.0016, euro:0.8 },
     ];
 
