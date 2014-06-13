@@ -32,19 +32,21 @@
  </div>
 
  <div style="position: absolute; width:200px; height:200px; left: 250px">
-  <qrcode version="8" error-correction-level="Q" size="200" data="bitcoin:{{item.address}}?amount={{item.price}}&label={{item.name.replace(' ', '%20')}}" style = "position: absolute; width:200px; height:200px;"></qrcode>
+  <a href="bitcoin:{{item.address}}?amount={{item.price}}&amp;label={{item.name.replace(' ', '%20')}}">
+  <qrcode version="8" error-correction-level="Q" size="200" data="bitcoin:{{item.address}}?amount={{item.price}}&amp;label={{item.name.replace(' ', '%20')}}" style = "position: absolute; width:200px; height:200px;"></qrcode>
   <div style="position: absolute; width:200px; height:200px; display:table">
    <div style="display:table-cell; vertical-align:middle; text-align: center; width: 200px">
     <img src="images/{{item.id}}_small.png" />
    </div>
   </div>
+  </a>
   </div>
 
   <div style="position: absolute; width:400px; height:200px; left:510px;">
    <h3>{{item.name}}</h1>
    Bitcoin price: <b>{{item.price*1000 | number:2}} mBTC</b> (&#8776; {{item.price*exchangeRate | number:2}} &euro;)<br>
    <br>
-   Euro Price: <b>{{item.euro | number:2}} &euro;</b>
+   Euro price: <b>{{item.euro | number:2}} &euro;</b>
   </div>
  </div>
 
