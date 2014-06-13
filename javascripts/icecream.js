@@ -1,5 +1,12 @@
 var test = angular.module("icecream", ["monospaced.qrcode"]);
 
+test.config([
+    '$compileProvider',
+    function($compileProvider) {
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|bitcoin):/);
+    }
+]);
+
 function IcecreamCtrl($scope, $http) {
     $scope.items = [
     { id:'flutschfinger',   name:'Flutsch Finger',       address:'1NZFMywLV4vZDqtFPEoeF58Ym7vo5oA7eQ', price:0.001, euro:0.5 },
