@@ -21,7 +21,7 @@ function IcecreamCtrl($scope, $http) {
 
     $scope.init = function () {
         angular.forEach($scope.items, function(item) {
-            item.encodedName = "test";
+            item.url = "bitcoin:" + item.address + "?amount=" +  item.price + "&label=" + item.name.replace(/ /g, '%20');
         });
         // check if there is query in url
         // and fire search in case its value is not empty
