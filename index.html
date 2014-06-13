@@ -7,29 +7,30 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.11/angular.js"></script>
 	<!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.10/angular.min.js"></script-->
-    
+
     <script src="javascripts/icecream.js"></script>
     <script src="javascripts/ng-qrcode.js"></script>
     <script src="javascripts/qrcode.js"></script>
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
 <body ng-app="icecream">
-  
+
 <img src="images/bitcoin_button.png" width="116" height="44">
-  
+
 <h2>Ice Cream for Bitcoin</h2>
 <div ng-controller="IcecreamCtrl" ng-init="init()">
 <!-- Ice cream varieties in stock: <b>{{items.length}}</b> -->
 <br><br>
  <div  ng-repeat="item in items" style="position:relative; width:200px; height:200px; margin-bottom:30px ">
- 
+
  <div style="position: absolute; width:200px; height:200px;">
   <img src="images/{{item.id}}_big.png" width="180" height="180" />
  </div>
- 
+
  <div style="position: absolute; width:200px; height:200px; left: 250px">
   <qrcode version="8" error-correction-level="Q" size="200" data="bitcoin:{{item.address}}?amount={{item.price}}&label={{item.name.replace(' ', '%20')}}" style = "position: absolute; width:200px; height:200px;"></qrcode>
   <div style="position: absolute; width:200px; height:200px; display:table">
@@ -38,7 +39,7 @@
    </div>
   </div>
   </div>
-  
+
   <div style="position: absolute; width:400px; height:200px; left:510px;">
    <h3>{{item.name}}</h1>
    Bitcoin price: <b>{{item.price*1000 | number:2}} mBTC</b> (&#8776; {{item.price*exchangeRate | number:2}} &euro;)<br>
@@ -46,17 +47,17 @@
    Euro Price: <b>{{item.euro | number:2}} &euro;</b>
   </div>
  </div>
- 
+
 </div>
 
 <br>
 
-<div style="border: 4px outset orange; width: 400px; padding: 10px">
+<div style="border: 4px outset orange; width: 800px; padding: 10px">
 <b>What’s this?</b><br>
 For questions ask Thorbjørn Lindeijer or Dominik Scherer. You can find them in the room opposite the mens toilet!
 </div>
 
     <script src="javascripts/scale.fix.js"></script>
- 
+
   </body>
 </html>
