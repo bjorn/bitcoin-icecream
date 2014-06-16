@@ -11,7 +11,8 @@ function IcecreamCtrl($scope, $http) {
     $scope.items = [
     { id:'flutschfinger',   name:'Flutsch Finger',       address:'1NZFMywLV4vZDqtFPEoeF58Ym7vo5oA7eQ', price:0.001, euro:0.5 },
     { id:'split',           name:'CujaMara Split',       address:'16qwAKeC9xqEUfzid85uvSVMqXz5SSFvCW', price:0.0016, euro:0.8 },
-//    { id:'snickers',        name:'Snickers Ice Cream',   address:'1EnqYmVHS1h5eBeP3SHSLZYmDr2pAZAuiR', price:0.0016, euro:0.8 },
+    { id:'snickers',        name:'Snickers Ice Cream',   address:'1EnqYmVHS1h5eBeP3SHSLZYmDr2pAZAuiR', price:0.0016, euro:0.8 },
+    { id:'magnummini',      name:'Magnum Mini',          address:'1Ci5tZrC2opG15oW4TWdNT8vEj922nuMqe', price:0.0013, euro:0.7 },
 //    { id:'magnumalmond',    name:'Magnum Almond',        address:'13JFwsGPLNtQnkgPYcqugKnkFwaiE1dUTt', price:0.002, euro:1.0 },
     { id:'magnumyoghurt',   name:'Magnum Yoghurt Fresh', address:'1JneKd8QbToVo2TNvrgEkQQrAz9MrbGVXm', price:0.002, euro:1.0 },
    { id:'magnumgold',      name:'Magnum Gold',          address:'1PgPdq7XgSdyV8uhY22Cj77LAxSn1HgrUz', price:0.002, euro:1.0 },
